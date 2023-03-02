@@ -1,0 +1,17 @@
+.header {
+    text-align: center;
+    color: #FF6F61;
+    font-family: 'Kanit', sans-serif;
+}
+.header__title {
+font-size: 50px;
+margin: 0px 0px 15px 0px;
+}
+.header__info {
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+}
+.header__info > a {
+    color: #FF6F61;
+    font-weight: 500;
+}
