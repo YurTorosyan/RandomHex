@@ -1,0 +1,24 @@
+.btn {
+    font-family: 'Kanit', sans-serif;
+    display: inline-block;
+    outline: 0;
+    padding: 0px 12px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 111, 97);
+    box-shadow: rgb(255 111 97 / 40%) 0px 2px 3px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    height: 36px;
+    transition: all 150ms ease-in-out 0s;
+    
+
+}
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 111, 97);
+    box-shadow: rgb(255 111 97 / 40%) 0px 2px 3px, rgb(231, 208, 195) 0px 0px 0px 3px;
+}
