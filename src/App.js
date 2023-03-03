@@ -3,14 +3,34 @@ import './App.css';
 
 import Header from './Header';
 import Hex from './Hex'
+import Footer from "./Footer"
 
 export default function App() {
-  const [hex, setHex] = useState(["d1d1d1", "000000", "ffffff", "c1c1c1", "fd12e0"])
+  const [hex, setHex] = useState([])
+
+  const generateHex = () => {
+    const copy = [...hex]
+    for (let i = 0; i < 20; i++) {
+      const randomHex = (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6);
+      if (!copy.includes(randomHex)) {
+        copy.push(randomHex)
+      } else {
+        i--
+      }
+    }
+    setHex(copy)
+  }
   return (
-    <div>
-      <Header />
-      <Hex hex={hex} />
-      <button className='btn'>Load Hex</button>
+    <div className='wrapper'>
+      <div className="main">
+        <Header />
+        <Hex hex={hex} />
+        <div className="button">
+          <button className='btn' onClick={generateHex}>Load Hex</button>
+        </div>
+      </div>
+      <Footer />
+
     </div>
   );
 }

@@ -1,3 +1,6 @@
+.button {
+    text-align: center;
+}
 .btn {
     font-family: 'Kanit', sans-serif;
     display: inline-block;
@@ -14,7 +17,6 @@
     font-weight: 400;
     height: 36px;
     transition: all 150ms ease-in-out 0s;
-    
 
 }
 .btn:hover {
