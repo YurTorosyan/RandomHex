@@ -24,3 +24,15 @@ font-size: 50px;
 .header__instruction-text > span {
     color: #FF6F61;
 }
+
+@media (max-width: 340.99px) {
+    .header__title {
+        font-size: 35px;
+    }
+    .header__info {
+        font-size: 15px;
+    }
+    .header__instruction {
+        font-size: 16px;
+    }
+}

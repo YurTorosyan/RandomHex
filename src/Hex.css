@@ -11,7 +11,7 @@
 
 .hex__item{
     cursor: pointer;
-    flex: 0 0 calc(20% - 15px);
+    flex: 0 0 260px;
     aspect-ratio: 1;
     border-radius: 10px;
     display: flex;
