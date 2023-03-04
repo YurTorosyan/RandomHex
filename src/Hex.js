@@ -18,7 +18,7 @@ export default function Hex({ hex }) {
                                             e.target.classList.remove('flag-active');
                                         }, 850);
                                     }}>
-                                    <p className='hex__name'>#{elem}</p>
+                                    <p className='hex__name' >#{elem}</p>
                                     <p className='hex__copied'>Copied!</p>
                                 </div>
                             )
