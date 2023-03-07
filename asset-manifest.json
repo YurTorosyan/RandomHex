@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RandomHex/static/css/main.01e4bf9f.css",
-    "main.js": "/RandomHex/static/js/main.50297cd2.js",
+    "main.css": "/RandomHex/static/css/main.7f7dc014.css",
+    "main.js": "/RandomHex/static/js/main.4b2cf4fe.js",
     "index.html": "/RandomHex/index.html",
-    "main.01e4bf9f.css.map": "/RandomHex/static/css/main.01e4bf9f.css.map",
-    "main.50297cd2.js.map": "/RandomHex/static/js/main.50297cd2.js.map"
+    "main.7f7dc014.css.map": "/RandomHex/static/css/main.7f7dc014.css.map",
+    "main.4b2cf4fe.js.map": "/RandomHex/static/js/main.4b2cf4fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.01e4bf9f.css",
-    "static/js/main.50297cd2.js"
+    "static/css/main.7f7dc014.css",
+    "static/js/main.4b2cf4fe.js"
   ]
 }
