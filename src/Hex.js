@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import ToggleClick from './ToggleClick';
 import './Hex.css';
 
 
-export default function Hex({ hex }) {
+export default function Hex({ hex, addFavorite, deleteFavorite }) {
     return (
         <section className='hex'>
             <div className="container">
+                <h2 className='hex__title'>Random Hex</h2>
+                <p className='hex__sub-title'>In this section random hexes</p>
                 <div className="hex__flex">
                     {
                         hex.map((elem) => {
@@ -18,6 +22,7 @@ export default function Hex({ hex }) {
                                             e.target.classList.remove('flag-active');
                                         }, 850);
                                     }}>
+                                    <ToggleClick firstFunc={() => addFavorite(elem)} secondFunc={() => deleteFavorite(elem)} />
                                     <p className='hex__name' >#{elem}</p>
                                     <p className='hex__copied'>Copied!</p>
                                 </div>
@@ -27,6 +32,6 @@ export default function Hex({ hex }) {
 
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

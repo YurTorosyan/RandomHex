@@ -1,6 +1,9 @@
 .button {
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .btn {
     font-family: 'Kanit', sans-serif;

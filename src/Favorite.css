@@ -1,7 +1,7 @@
-.hex {
+.favorite {
     padding: 20px 0px;
 }
-.hex__title {
+.favorite__title {
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
     color:#FF6F61;
@@ -10,7 +10,7 @@
     line-height: 1.5;
     
 }
-.hex__title::after {
+.favorite__title::after {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -22,7 +22,7 @@
     background-color: #FF6F61;
     border-radius: 10px;
 }
-.hex__title::before {
+.favorite__title::before {
     position: absolute;
     bottom: 1px;
     left: 50%;
@@ -34,7 +34,7 @@
     background-color: #FF6F61;
     border-radius: 10px;
 }
-.hex__sub-title {
+.favorite__sub-title {
     font-family: 'Kanit', sans-serif;
     font-size: 17px;
     color: rgb(70, 70, 70);
@@ -43,7 +43,8 @@
     position: relative;
     margin: 0px 0px 15px 0px;
 }
-.hex__flex {
+
+.favorite__flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,7 +52,7 @@
     gap: 15px;
 }
 
-.hex__item{
+.favorite__item{
     cursor: pointer;
     flex: 0 0 260px;
     aspect-ratio: 1;
@@ -64,8 +65,18 @@
     position: relative;
     overflow: hidden;
 }
-
-.hex__name {
+.favorite__remove {
+    cursor: pointer;
+    padding: 2px 10px;
+    background-color: rgb(225, 234, 238);
+    border: none;
+    border-radius: 0px 0px 7px 7px;
+}
+.favorite__remove > i {
+    font-size: 20px;
+    color: #FF6F61;
+}
+.favorite__name {
     font-family: 'Kanit', sans-serif;
     display: block;
     background-image: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
@@ -76,7 +87,7 @@
     border-radius: 7px 7px 0px 0px;
     border: 1px solid rgb(225, 234, 238);
 }
-.hex__copied {
+.favorite__copied {
     font-family: 'Kanit', sans-serif;
     position: absolute;
     top: 50%;
@@ -96,19 +107,8 @@
     animation: none;
 }
 
-.flag-active > .hex__copied{
+.flag-active > .favorite__copied{
     animation: flagActive 800ms ease 1 forwards;
-}
-.hex__favorite {
-    cursor: pointer;
-    padding: 2px 10px;
-    background-color: rgb(225, 234, 238);
-    border: none;
-    border-radius: 0px 0px 7px 7px;
-}
-.hex__favorite > i {
-    font-size: 20px;
-    color: #FF6F61;
 }
 
 @keyframes flagActive {
